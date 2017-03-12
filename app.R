@@ -13,7 +13,7 @@ library(grid)
  
 folder_dir<-getwd()
 source(paste0(folder_dir ,'/two_dimensional_sim.R'))
-source(paste0(folder_dir ,'/two_dimensional_sim.R'))  
+source(paste0(folder_dir ,'/plot_opinion_matrix.R'))  
  
  
 
