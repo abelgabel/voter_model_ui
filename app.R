@@ -12,8 +12,8 @@ library(grid)
 # #####################################################
  
 folder_dir<-getwd()
-source(paste0(folder_dir ,'two_dimensional_sim.R'))
-source(paste0(folder_dir ,'/Users/cuatrooctavos/Desktop/abelgabel_github/voter_model_ui/two_dimensional_sim.R'))  
+source(paste0(folder_dir ,'/two_dimensional_sim.R'))
+source(paste0(folder_dir ,'/two_dimensional_sim.R'))  
  
  
 
