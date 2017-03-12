@@ -121,18 +121,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   var size_var = document.getElementById('size').value;
   var t_periods_var = document.getElementById('t_periods').value;
     	 function myFunction() {
-         number=null;   
           timer=1;
     	 	 input2=input2+1;
+    	 	 number=null;
     	 	 size_var = document.getElementById('size').value;
             t_periods_var = document.getElementById('t_periods').value;
     	 	 Shiny.onInputChange("simulation", input2);  
-    	 	 number=1;
+        Shiny.onInputChange("mydata", number);  
+  	 	 number=1;
 var sequinterval=setInterval(function () { 
               number=number+1; 
               if(timer==0) {
               clearInterval(sequinterval);
-              number=null;
               }
         Shiny.onInputChange("size", size_var);  
         Shiny.onInputChange("t_periods", t_periods_var);  

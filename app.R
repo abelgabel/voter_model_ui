@@ -12,8 +12,8 @@ library(grid)
 # #####################################################
  
 folder_dir<-getwd()
-source('/Users/cuatrooctavos/Desktop/abelgabel_github/voter_model/two_dimensional_sim.R')
-source('/Users/cuatrooctavos/Desktop/abelgabel_github/voter_model/two_dimensional_sim.R')  
+source('/Users/cuatrooctavos/Desktop/abelgabel_github/voter_model_ui/two_dimensional_sim.R')
+source('/Users/cuatrooctavos/Desktop/abelgabel_github/voter_model_ui/two_dimensional_sim.R')  
  
  
 
@@ -31,7 +31,6 @@ size_c<-as.numeric(size_c)
  observe({                    
 time<-input$mydata
 	 # Plot
-	 print(time)
 	 output$plotopinion<-renderPlot({
  	if(is.null(time))
     {a<-"Do nothing"
