@@ -1,0 +1,210 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  {{ headContent() }}
+<title>Voter model-Simulations: abelgabel</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Coffee Break Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/mystyle.css" rel='stylesheet' type='text/css' />
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<script src="js/jquery.min.js"></script>
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!--start-smoth-scrolling-->
+</head>
+<body>
+	<!--header-top-starts-->
+	<div class="header-top">
+		<div class="container">
+			<div class="head-main">
+			</div>
+		</div>
+	</div>
+	<!--header-top-end-->
+		<div class="banner">
+		<div class="container">
+			<div class="banner-top">
+	<!--start-header-->
+	<div class="header">
+		<div class="container">
+			<div class="head">
+			<div class="navigation">
+				 <span class="menu"></span> 
+					<ul class="navig">
+							<li><a href="http://www.abelgabel.com"  class="active">
+							<img src="images/book_apple.png" class="b-radius-top" style="height:30px">
+							Home</a></li>
+						<li><a href="http://www.abelgabel.com/tribute_game/index.html"> <img src="images/books.png" class="b-radius-top" style="height:30px">
+						Introduction</a></li>
+						<li href="http://www.abelgabel.com/tribute_game/case_study.html"><a >
+						<img src="images/books.png" class="b-radius-top" style="height:30px">
+						Case Sutdy</a></li>
+						<li><a >
+						<img src="images/pencil.png" class="b-radius-top" style="height:30px">
+						Simulations</a></li>
+						<li><a href="http://www.abelgabel.com/tribute_game/r_code.html">
+						<img src="images/pencil.png" class="b-radius-top" style="height:30px">
+						R code</a></li>
+					
+					</ul>
+			</div>
+
+				<div class="clearfix"></div>
+			</div>
+			</div>
+		</div>	
+	<!-- script-for-menu -->
+	<!-- script-for-menu -->
+		<script>
+			$("span.menu").click(function(){
+				$(" ul.navig").slideToggle("slow" , function(){
+				});
+			});
+		</script>
+	<!-- script-for-menu -->
+	<!--banner-starts-->
+
+				<div class="banner-text">
+					<h1>Tribute model</h1>
+					   <h2>Run</h2>
+				
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--banner-end-->
+	
+	<div class="about">
+	<div class="container">	
+<div  class="bread-crumbs">
+<ol class="breadcrumb">
+<li> Parameters: </li>
+	      <li>Size of the lattice: <input type="number" id="size" value="5" style="width:70px;"></li >
+			<li> Number of periods:  <input type="number" id="t_periods" value="1000" style="width:70px;"> </li>  
+</ol>
+	<ol class="breadcrumb">
+<li >   <button onclick="myFunction()" class="buttons">Simulations</button>  </li>
+<li >   <button onclick="stopSimulation()" class="buttons">Stop simulations</button>  </li>
+<li> <span style="color: #F19F4D;">Plots are shown after running a simulation. </span> </li>
+
+</ol>
+				<div class="about-two">
+	<h4>  Voter model </h4>
+						 {{plot_opinion}}
+
+
+					</div>	
+					<script>
+   var number=1;
+   var input2=1;
+   var timer=1;
+  var size_var = document.getElementById('size').value;
+  var t_periods_var = document.getElementById('t_periods').value;
+    	 function myFunction() {
+         number=null;   
+          timer=1;
+    	 	 input2=input2+1;
+    	 	 size_var = document.getElementById('size').value;
+            t_periods_var = document.getElementById('t_periods').value;
+    	 	 Shiny.onInputChange("simulation", input2);  
+    	 	 number=1;
+var sequinterval=setInterval(function () { 
+              number=number+1; 
+              if(timer==0) {
+              clearInterval(sequinterval);
+              number=null;
+              }
+        Shiny.onInputChange("size", size_var);  
+        Shiny.onInputChange("t_periods", t_periods_var);  
+      Shiny.onInputChange("mydata", number);  
+       } ,300);
+                    };
+       function stopSimulation(){ 
+       timer=0;      
+       return timer;            
+             }
+</script>
+</div>
+</div>
+</div>
+</div>	 	
+<p id="demo"> </p>
+	<!--about-starts-->
+	<div class="about">
+		<div class="container">
+			<div class="about-main">
+				<div class="col-md-8 about-left">
+					<div class="about-one">
+ 					</div>
+
+				</div>
+		</div>
+	</div>
+	
+	
+	</div>
+	<!--about-end-->
+	
+
+ </div>
+
+ 
+ <script>
+function displayinfo2() {
+    var x = document.getElementById('info2');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+ 
+ 
+	<!--footer-starts-->
+			<div style="background-color:#D9D9D9">
+	<div class="footer">
+		<div class="container">
+			<div class="footer-text">
+info@abelgabel		
+</div>	</div>
+		</div>
+	</div>
+	<!--footer-end-->
+	
+	
+	<!-- Google analytics -->
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-92225624-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- Google Analytics -->
+	
+</body>
+</html>
